@@ -1,0 +1,12 @@
+:root {
+    --bright: hsl(0, 0%, 100%);
+    --dark: #111213;
+    --primary: #ED8E7C;
+    --secondary: #9831FF;
+
+    --spacing-base: 1.5rem;
+    
+    --margin-s: 1.2rem;
+    --margin-base: 1.5rem;
+    --margin-m: calc(var(--margin-base) * 2);
+}

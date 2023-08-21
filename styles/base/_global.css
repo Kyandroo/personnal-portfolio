@@ -1,0 +1,25 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+button,
+a {
+    all: unset;
+}
+
+span {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+.navigation {
+    background-color: rgb(255, 91, 91);
+}
