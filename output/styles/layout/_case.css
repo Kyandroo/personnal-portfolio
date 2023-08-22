@@ -1,0 +1,13 @@
+.categories {
+    & .categories__banner {
+        color: var(--bright);
+        background-color: var(--dark);
+        padding: var(--margin-m);
+
+        & .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

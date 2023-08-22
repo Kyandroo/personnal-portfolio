@@ -1,58 +1,62 @@
 ---
 title: KDV | Home
+tags: nav
+nav:
+    title: Home
+    order: 1
 ---
 
 {% extends "../_layouts/banner.njk" %}
 
 {% block banner %}
-<div class="container banner">
-    <img src="/img/banner-square.png" alt="Rectangle border with gradiënt in it">
-</div>
-
-<span>
-    Hi, I&#39;m Kyandro and welcome to my portfolio! Take a look around.
-</span>
-
-<img src="/img/banner.jpg" alt="Website banner with Kyandro's eyes looking at you">
+    <div class="banner"></div>
 {% endblock banner %}
 
 {% block content %}
-    <div class="intro">
-        <h1>
+    <div class="big-block intro">
+        <h1 class="sr-only">
             Kyandro De Volder, Graphic designer and front-end designer
         </h1>
 
-        <span>Design Coding Photo</span>
+        <div class="swipe-parent">
+            <span class="swipe-left">Design Coding Photo</span>
 
-        <img src="/img/self-portrait.jpg" alt="A self portrait of Kyandro">
+            <img src="/img/self-portrait.jpg" alt="A self portrait of Kyandro">
+        </div>
 
         <p>
-            I&#39;m Kyandro De Volder, a <span>front-end developer</span> and <span>graphic designer</span> who loves
-            <span>photography.</span> I enjoy creating visually appealing stuff.
+            I&#39;m Kyandro De Volder, a <span class="inl-span">front-end developer</span> and <span class="inl-span">graphic designer</span> who loves
+            <span class="inl-span">photography.</span> I enjoy creating visually appealing stuff.
         </p>
     </div>
 
     <div class="categories">
         <div class="categories__banner">
-            <span>
-                Design
-            </span>
+            <ul class="container">
+                <li>
+                    Design
+                </li>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="58" fill="none">
-                <path stroke="#fff" stroke-width="2" d="M1 0v58" />
-            </svg>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="58" fill="none">
+                        <path stroke="#fff" stroke-width="2" d="M1 0v58" />
+                    </svg>
+                </li>
 
-            <span>
-                Coding
-            </span>
+                <li>
+                    Coding
+                </li>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="2" height="58" fill="none">
-                <path stroke="#fff" stroke-width="2" d="M1 0v58" />
-            </svg>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="58" fill="none">
+                        <path stroke="#fff" stroke-width="2" d="M1 0v58" />
+                    </svg>
+                </li>
 
-            <span>
-                Photo
-            </span>
+                <li>
+                    Photo
+                </li>
+            </ul>
         </div>
 
         <div class="categories__category">
