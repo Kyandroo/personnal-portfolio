@@ -1,0 +1,24 @@
+// header {
+//     height: 100vh;
+//     background-image: url("/img/banner-mobile.jpg");
+//     background-position: top center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+
+// @media (min-width: 51rem) {
+//     header {
+//         height: 100vh;
+//         background-image: url("/img/banner.jpg");
+//     }
+// }
+
+// .navigation {
+//     position: relative;
+
+//     & .menu {
+//         cursor: pointer;
+//         position: absolute;
+//         right: 0;
+//     }
+// }
