@@ -1,5 +1,5 @@
 footer {
-    background-image: url('/img/footer-background-flat.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('/img/footer-background-flat.jpg');
     background-position: right;
     background-repeat: no-repeat;
     height: 322px;
