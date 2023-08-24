@@ -18,10 +18,12 @@
         }
 
         & .swipe-left {
+            color: var(--primary);
             position: absolute;
             z-index: -1;
             /* TO FIX */
-            right: -80px;
+            right: -250%;
+            width: 35rem;
         }
 
         & p {
@@ -43,13 +45,21 @@
             margin-bottom: var(--margin-m);
         }
 
-        & .cases-link {
+        & .cases-link a {
             font-size: 18px;
             text-transform: uppercase;
             margin-top: var(--spacing-base);
             display: flex;
             align-items: center;
             gap: calc(var(--spacing-base) / 2);
+            
+            & svg {
+                transition: .2s all ease-in-out;
+            }
+        }
+
+        & .cases-link:hover svg {
+            transform: translateX(1rem);
         }
     }
 }

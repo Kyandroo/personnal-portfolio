@@ -10,6 +10,11 @@ body {
     line-height: 1.5;
     color: var(--dark);
 
+    &.read--bold {
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
     &.read--big {
         font-size: 1.375rem;
         text-transform: uppercase;

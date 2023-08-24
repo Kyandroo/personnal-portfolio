@@ -1,4 +1,4 @@
-body {
+html {
     scroll-behavior: smooth;
 }
 
@@ -41,6 +41,7 @@ ul {
 button,
 a {
     all: unset;
+	cursor: pointer;
 }
 
 span {
@@ -49,4 +50,8 @@ span {
 
 .invisible {
     display: none;
+}
+
+.full-h {
+	height: 100%;
 }

@@ -2,7 +2,7 @@
     color: var(--bright);
     padding: 14px 21px;
     display: inline-block;
-    transition: .5s all ease-in-out;
+    transition: .2s all ease-in-out;
 
     &.btn--pos {
         background-color: var(--dark);
@@ -15,6 +15,5 @@
     &.btn--neg:hover {
         color: var(--dark);
         background: var(--bright);
-        border-color: var(--dark);
     }
 }
