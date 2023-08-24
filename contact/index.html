@@ -19,9 +19,9 @@
 </head>
 
 <body>
-    <nav class="navigation">
-    <div class="container">
-        <button class="menu menu--open">
+    <nav class="navigation invisible">
+    <div class="container block full-h">
+        <button class="menu menu--open invisible">
             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none">
                 <g >
                     <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -33,7 +33,7 @@
             </svg>
         </button>
 
-        <div class="container">
+        <div class="container navigation__open full-h">
             <button class="menu menu--close">
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none">
                     <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -44,19 +44,19 @@
 
             <ul class="navigation__list">
                 
-                    <li>
+                    <li class="title">
                         <a href="/">
                             Home
                         </a>
                     </li>
                 
-                    <li>
+                    <li class="title">
                         <a href="/contact/">
                             Contact
                         </a>
                     </li>
                 
-                    <li>
+                    <li class="title">
                         <a href="/cases/">
                             Cases
                         </a>
@@ -64,7 +64,7 @@
                 
             </ul>
 
-            <img src="/img/menu-profile.png" alt="Self portrait of Kyandro">
+            <img class="invisible" src="/img/menu-profile.png" alt="Self portrait of Kyandro">
 
             <ul class="navigation__socials">
                 <li>
@@ -118,7 +118,7 @@
         </span>
 
         <p>
-            Want to get in touch? No problem, you find all info on the contact page.
+            Want to get in touch? No problem, you find all info on the <span class="inl-span highlight">contact page.</span>
         </p>
 
         <a href="#" class="btn btn--neg">
