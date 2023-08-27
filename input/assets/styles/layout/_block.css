@@ -17,14 +17,18 @@
             margin-bottom: var(--margin-m);
         }
 
-        & .swipe-left {
-            color: var(--primary);
-            position: absolute;
-            z-index: -1;
-            /* TO FIX */
-            right: -250%;
-            width: 35rem;
+        & p {
+            text-align: center;
         }
+
+        // & .swipe-left {
+        //     color: var(--primary);
+        //     position: absolute;
+        //     z-index: -1;
+        //     /* TO FIX */
+        //     right: -250%;
+        //     width: 35rem;
+        // }
 
         & p {
             text-align: center;
