@@ -11,17 +11,21 @@ nav:
 
 {% block banner %}
     <div class="banner-home block">
-        <div class="empty-fill"></div>
+        <div class="banner-home__content">
+            <img class="banner__rect" src="/img/banner-square.png" alt="Rectangle with gradiënt on it">
 
-        <span class="banner-title">
-            Hello, <br>welcome!
-        </span>
+            <div class="empty-fill"></div>
 
-        {{ fileSocials.socials(socials) }}
+            <span class="banner-title">
+                Hello, <br>welcome!
+            </span>
 
-        <span class="banner-title invisible">
-            Hi, I&#39;m Kyandro and welcome to my portfolio! Take a look around.
-        </span>
+            {{ fileSocials.socials(socials) }}
+
+            <span class="banner-title-long">
+                Hi, I&#39;m Kyandro and welcome to my portfolio! Take a look around.
+            </span>
+        </div>
     </div>
 {% endblock banner %}
 
