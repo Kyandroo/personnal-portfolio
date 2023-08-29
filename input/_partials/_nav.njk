@@ -17,7 +17,7 @@
 
             <div class="nav-flex">
                 <ul class="navigation__list">
-                    {% for nav_item in collections.nav %}
+                    {% for nav_item in collections.nav | sortByOrder %}
                     <li class="title">
                         <a href="{{ nav_item.page.url }}">
                             {{ nav_item.data.nav.title }}

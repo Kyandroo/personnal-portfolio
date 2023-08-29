@@ -15,11 +15,18 @@ footer {
     }
 
     & p {
+        max-width: 345px;
         line-height: 1.6;
     }
 
     & .btn {
-        margin: var(--margin-base) 0 var(--margin-m) 0;        
+        margin: var(--margin-base) 0 var(--margin-m) 0;
+        border: 1px solid var(--bright);
+
+        &.btn:hover {
+            color: var(--dark);
+            background-color: var(--bright);
+        }
     }
 
     & .small-text {
@@ -38,6 +45,16 @@ footer {
 
         & .small-text {
             color: var(--dark);
+        }
+
+        & .btn {
+            color: var(--dark);
+            border-color: var(--dark);
+
+            &.btn:hover {
+                color: var(--bright);
+                background-color: var(--dark);
+            }
         }
     }
   }

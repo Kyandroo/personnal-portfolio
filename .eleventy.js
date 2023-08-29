@@ -1,3 +1,11 @@
+const sortItems = (arr) => {
+  const sortedArray = arr.sort((a, b) => {
+    return a.data.nav.order - b.data.nav.order;
+  });
+
+  return sortedArray;
+};
+
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({
     "./input/assets/styles": "styles/",
@@ -5,6 +13,8 @@ module.exports = (eleventyConfig) => {
     "./input/assets/fonts": "/fonts/",
     "./input/js": "/js/",
   });
+
+  eleventyConfig.addFilter("sortByOrder", sortItems);
 
   return {
     dir: {
