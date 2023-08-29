@@ -3,6 +3,7 @@ module.exports = (eleventyConfig) => {
     "./input/assets/styles": "styles/",
     "./input/assets/images": "/img/",
     "./input/assets/fonts": "/fonts/",
+    "./input/js": "/js/",
   });
 
   return {

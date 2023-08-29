@@ -7,9 +7,22 @@ nav:
 ---
 
 {% extends "../_layouts/banner.njk" %}
+{% import "../_components/_socials.njk" as fileSocials %}
 
 {% block banner %}
-    <div class="banner"></div>
+    <div class="banner-home block">
+        <div class="empty-fill"></div>
+
+        <span class="banner-title">
+            Hello, <br>welcome!
+        </span>
+
+        {{ fileSocials.socials(socials) }}
+
+        <span class="banner-title invisible">
+            Hi, I&#39;m Kyandro and welcome to my portfolio! Take a look around.
+        </span>
+    </div>
 {% endblock banner %}
 
 {% block content %}
