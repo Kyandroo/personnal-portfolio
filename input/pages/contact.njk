@@ -7,3 +7,55 @@ nav:
 ---
 
 {% extends "../_layouts/two-cols.njk" %}
+
+{% block content %}
+<div class="container">
+        <h1 class="sr-only">
+            Contact page
+        </h1>
+
+        <div class="big-block block--contact">
+            <div class="contact__intro">
+                <h2 class="title">
+                    Get in touch
+                </h2>
+
+                <p>
+                    <span class="inl-span highlight">Want to contact me?</span> No problem, I'm excited to collaborate and create something together!
+                </p>
+            </div>
+            
+            <div class="contact__info">
+                <div>
+                    <span class="read read--big">
+                        Phone
+                    </span>
+
+                    <address>
+                        <a href="tel:0495528579">
+                            +32(0) 495 52 85 79
+                        </a>
+                    </address>
+                </div>
+
+                <div>
+                    <span class="read read--big">
+                        E-mail
+                    </span>
+
+                    <address>
+                        <a href="mailto:Kyandro.devolder@hotmail.be">
+                            Kyandro.devolder@hotmail.be
+                        </a>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block bottom %}
+    <div class="block contact-timer">
+        <span id="contact-clock" class="contact-clock read read--big"></span>
+    </div>
+{% endblock bottom %}

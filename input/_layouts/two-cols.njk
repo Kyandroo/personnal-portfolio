@@ -1,2 +1,11 @@
 {% extends "./base.njk" %}
-CONTACT
+
+{% block main %}
+    {% block content %}
+        {{ content | safe }}
+    {% endblock content %}
+
+    {% block bottom %}
+        {{ content | safe }}
+    {% endblock bottom %}
+{% endblock main %}

@@ -6,6 +6,10 @@ body {
 	background-color: var(--bright);
 }
 
+main {
+	overflow: hidden;
+}
+
 .sr-only {
 	border: 0 !important;
 	clip: rect(1px, 1px, 1px, 1px) !important;
