@@ -1,0 +1,17 @@
+[
+    {
+        "name": "design",
+        "intro": "Here you will find the cases I have made as a Graphic / Photo Designer.",
+        "img": "/img/banner-photo.jpg"
+    },
+    {
+        "name": "coding",
+        "intro": "Here you will find not only front-end cases, but also back-end practices.",
+        "img": "/img/banner-photo.jpg"
+    },
+    {
+        "name": "photo",
+        "intro": "Here you will find all different kind of photography projects I did.",
+        "img": "/img/banner-photo.jpg"
+    }
+]

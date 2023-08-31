@@ -7,3 +7,54 @@ nav:
 ---
 
 {% extends "../_layouts/grid.njk" %}
+
+{% block categories %}
+    <h1 class="sr-only">
+        Cases
+    </h1>
+
+    {% for category in categories %}
+        {# <div class="cat-banner">
+            <img class="cat-banner__img" src="{{ category.img }}" alt="Banner for {{ category.name }} cases"> #}
+
+            <section class="block cat-banner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="377" height="2" fill="none"><path fill="url(#a)" fill-rule="evenodd" d="M377 0H0v2h377V0Z" clip-rule="evenodd"/><defs><linearGradient id="a" x1="0" x2="960" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#ED7C8D"/><stop offset=".484" stop-color="#9831FF"/><stop offset="1" stop-color="#ED8E7C"/></linearGradient></defs></svg>
+
+                <h2 class="read read--big">
+                    {{ category.name }} cases
+                </h2>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="378" height="2" fill="none"><path fill="url(#a)" fill-rule="evenodd" d="M0 2h378V0H0v2Z" clip-rule="evenodd"/><defs><linearGradient id="a" x1="-582" x2="378" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#ED7C8D"/><stop offset=".484" stop-color="#9831FF"/><stop offset="1" stop-color="#ED8E7C"/></linearGradient></defs></svg>
+            </section>
+        {# </div> #}
+
+        <section class="container big-block block--categories">
+            <p class="cat-intro">
+                {{ category.intro }}
+            </p>
+
+            <div class="cat-content__cases">
+                {% for item in collections.cases %}
+                    {% if item.data.kind == category.name %}
+                        <div class="case-card">
+                            <img src="{{ item.data.img }}" alt="Mockup for the case '{{ item.data.title }}'">
+
+                            <h3>
+                                {{ item.data.title }}
+                            </h3>
+
+                            <a href="{{ item.page.url }}">
+                                Go to case
+                            </a>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+        
+    {% endfor %}
+{% endblock categories %}
+
+{% block bottom %}
+    <div class="grad-block empty-block"></div>
+{% endblock bottom %}
