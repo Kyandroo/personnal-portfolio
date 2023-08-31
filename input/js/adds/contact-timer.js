@@ -1,3 +1,5 @@
+const $clock = document.getElementById("contact-clock");
+
 const digitalTimer = () => {
   const clock = () => {
     const today = new Date();
@@ -11,7 +13,7 @@ const digitalTimer = () => {
 
     const loadDescription = `Kyandro's local time ${hour}:${minute}:${second}`;
 
-    document.getElementById("contact-clock").innerHTML = loadDescription;
+    $clock.innerHTML = loadDescription;
   };
 
   window.addEventListener("load", () => {
