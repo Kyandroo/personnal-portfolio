@@ -26,21 +26,30 @@
 
 .cat-content__cases {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: var(--spacing-base);
     color: var(--bright);
 
+    & .banner-img {
+        filter: brightness(.8);
+    }
+
     & .case-card {
+        width: 18rem;
+        max-width: 20rem;
+        flex-grow: 1;
         aspect-ratio: 1 / 1;
         position: relative;
         display: flex;
 
         & .fade {
-            height: 75%;
+            height: 90%;
         }
 
         & .read--bold {
-            color: var(--primary);
+            color: var(--bright);
             margin-bottom: 1rem;
         }
 
@@ -49,5 +58,15 @@
             position: relative;
             z-index: 20;
         }
+    }
+}
+
+@media (min-width: 977px) {
+    .cat-content__cases .case-card:nth-child(odd) {
+        max-height: 288px;
+    }
+
+    .cat-content__cases .case-card:nth-child(even) {
+        aspect-ratio: 1 / 1.2;
     }
 }
