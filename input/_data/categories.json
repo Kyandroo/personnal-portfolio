@@ -2,12 +2,12 @@
     {
         "name": "design",
         "intro": "Here you will find the cases I have made as a Graphic / Photo Designer.",
-        "img": "/img/banner-photo.jpg"
+        "img": "/img/banner-design.jpg"
     },
     {
         "name": "coding",
         "intro": "Here you will find not only front-end cases, but also back-end practices.",
-        "img": "/img/banner-photo.jpg"
+        "img": "/img/banner-coding.jpg"
     },
     {
         "name": "photo",

@@ -23,3 +23,31 @@
         }
     }
 }
+
+.cat-content__cases {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-base);
+    color: var(--bright);
+
+    & .case-card {
+        aspect-ratio: 1 / 1;
+        position: relative;
+        display: flex;
+
+        & .fade {
+            height: 75%;
+        }
+
+        & .read--bold {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        & .case-card__content {
+            align-self: flex-end;
+            position: relative;
+            z-index: 20;
+        }
+    }
+}
