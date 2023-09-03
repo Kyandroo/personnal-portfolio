@@ -1,0 +1,29 @@
+.side-nav {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 50;
+    bottom: 0;
+    right: 0;
+
+    & .side-nav__links {
+        text-align: center;
+        padding: .5rem 1rem;
+    }
+
+    & .side-nav__links:hover {
+        background-color: var(--primary);
+    }
+
+    & .side-nav__links:nth-child(even) {
+        border-top: 2px solid var(--bright);
+        border-bottom: 2px solid var(--bright);
+    }
+}
+
+@media (max-width: 35rem) {
+    .side-nav {
+        display: none;
+    }
+}

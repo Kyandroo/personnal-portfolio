@@ -8,13 +8,23 @@ nav:
 
 {% extends "../_layouts/grid.njk" %}
 
+{% block top %}
+    <section class="side-nav read read--bold">
+        {% for category in categories %}
+            <a class="btn side-nav__links" href="#{{ category.name }}">
+                {{ category.name }}
+            </a>
+        {% endfor %}
+    </section>
+{% endblock top %}
+
 {% block categories %}
     <h1 class="sr-only">
         Cases
     </h1>
 
     {% for category in categories %}
-        <div class="cat-banner">
+        <div id="{{ category.name }}" class="cat-banner">
             <img class="banner-img" src="{{ category.img }}" alt="Banner for {{ category.name }} cases">
 
             <section class="block cat-banner__content">
