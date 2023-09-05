@@ -152,7 +152,7 @@
     }
 }
 
-@media (min-width: 98rem) {
+@media (min-width: 85rem) {
     .banner-home {
         background-image: url("/img/banner-big.jpg");
     }

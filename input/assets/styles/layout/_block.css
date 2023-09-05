@@ -48,6 +48,7 @@
 
         & p {
             margin-bottom: var(--margin-m);
+            max-width: 40rem;
         }
 
         & .cases-link a {

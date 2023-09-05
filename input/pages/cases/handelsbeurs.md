@@ -23,7 +23,7 @@ tags: cases
 </div>
 </div>
 
-<div class="big-block case-detail__pages">
+<div class="big-block case-detail__pages pages-handelsbeurs">
 <div class="container">
 
 ## Pages

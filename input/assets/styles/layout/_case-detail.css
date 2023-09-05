@@ -60,7 +60,11 @@
         }
     }
 
-    & div:nth-child(even) {
+    & .case-detail__result p:not(.result-portraits p) {
+        max-width: 40rem;
+    }
+
+    & div:nth-child(even):not(.portraits-intro) {
         color: var(--bright);
         background-color: var(--dark);
     }
@@ -92,11 +96,32 @@
 
 @media (min-width: 601px) {
     .case-detail {
-        & .case-detail__pages p:nth-child(2),
-        & .case-detail__pages p:last-child {
+        & .pages-handelsbeurs p:nth-child(2),
+        & .pages-handelsbeurs p:last-child {
             & img {
                 width: 40%;
             }
         }
+    }
+}
+
+.pages-vinyl .container p {
+    max-width: 40%;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.result-portraits {
+    & .portraits-intro {
+        width: 100%;
+        
+        & p {
+            max-width: 40rem;
+        }
+    }
+    & p:has(img) {
+        max-width: 30%;
     }
 }
