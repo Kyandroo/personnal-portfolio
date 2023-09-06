@@ -1,10 +1,22 @@
 footer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('/img/footer-background-flat.jpg');
     background-position: right;
     background-repeat: no-repeat;
     height: 322px;
     color: var(--bright);
     overflow: hidden;
+    position: relative;
+
+    & .footer-back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        z-index: -20;
+    }
+
+    & .footer-back--grad {
+        display: none;
+    }
 
     & .read {
         color: var(--bright);
@@ -36,8 +48,24 @@ footer {
 
 @media (min-width: 80rem) {
     footer {
-        background-image: url('/img/footer-background.jpg');
         color: var(--dark);
+
+        & .grad-right {
+            position: absolute;
+            width: 60%;
+            height: 100%;
+            background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+            z-index: -10;
+        }
+
+        & .footer-back--flat {
+            display: none;
+        }
+
+        & .footer-back--grad {
+            display: block;
+            left: 0;
+        }
 
         & .read {
             color: var(--dark);
