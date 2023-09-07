@@ -139,7 +139,7 @@ nav:
                 <div class="thumbnails">
                     {% for item in collections.cases %}
                         {% if item.data.kind == "coding" and item.data.spotlight == true %}
-                            <a class="thumbnails__case" href="{{ item.page.url }}">
+                            <a class="thumbnails__case" href="{{ item.data.url }}" target="_blank">
                                 <p class="read read--bold thumbnails__title">
                                     {{ item.data.title }}
                                 </p>
