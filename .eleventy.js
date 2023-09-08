@@ -9,9 +9,9 @@ const sortItems = (arr) => {
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({
     "./input/assets/styles": "styles/",
-    "./input/assets/images": "/img/",
-    "./input/assets/fonts": "/fonts/",
-    "./input/js": "/js/",
+    "./input/assets/images": "img/",
+    "./input/assets/fonts": "fonts/",
+    "./input/js": "js/",
   });
 
   eleventyConfig.addFilter("sortByOrder", sortItems);
