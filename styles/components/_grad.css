@@ -1,8 +1,0 @@
-.grad-block {
-    background-image: linear-gradient(to right, var(--primary) , var(--secondary));
-
-    &.empty-block {
-        width: 100%;
-        height: 81px;
-    }
-}
