@@ -1,0 +1,12 @@
+[
+    {
+        "title": "LinkedIn",
+        "icon": "/img/linkedin.svg",
+        "url": "https://www.linkedin.com/in/kyandro-de-volder-074a04174/"
+    },
+    {
+        "title": "GitHub",
+        "icon": "/img/github.svg",
+        "url": "https://github.com/Kyandroo"
+    }
+]

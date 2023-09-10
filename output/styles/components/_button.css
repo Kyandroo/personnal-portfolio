@@ -1,0 +1,19 @@
+.btn {
+    color: var(--bright);
+    padding: 14px 21px;
+    display: inline-block;
+    transition: .2s all ease-in-out;
+
+    &.btn--pos {
+        background-color: var(--dark);
+    }
+
+    &.btn--neg {
+        border: 2px solid var(--bright);
+    }
+
+    &.btn--neg:hover {
+        color: var(--dark);
+        background: var(--bright);
+    }
+}

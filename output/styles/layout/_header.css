@@ -1,0 +1,159 @@
+.banner-home {
+    height: 100vh;
+    background-image: url("/img/banner-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .banner-home__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    & .banner__rect {
+        display: none;
+    }
+
+    & .banner-title {
+        font-family: "HK Grotesk";
+        font-weight: 300;
+        font-size: 2.7rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 1.2;
+        color: var(--bright);
+        text-align: center;
+    }
+
+    & .banner-title-long {
+        display: none;
+    }
+}
+
+.full-nav {
+    position: relative;
+
+    & .menu--open {
+        position: fixed;
+        top: var(--spacing-base);
+        right: var(--spacing-base);
+        z-index: 60;
+        mix-blend-mode: difference;
+    }
+
+    & .navigation {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(17, 18, 19, .75);
+        backdrop-filter: blur(20px);
+        padding: var(--spacing-base);
+        position: fixed;
+        z-index: 100;
+    }
+
+    & .nav-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & .menu--close {
+            align-self: flex-end;
+        }
+    }
+
+    & .navigation__list {
+        text-align: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        gap: var(--margin-m);
+
+        & a {
+            color: var(--bright);
+        }
+    }
+
+    & .nav-content__img {
+        display: none;
+    }
+}
+
+@media (min-width: 50rem) {
+    .banner-title {
+        transform: scale(1.4);
+    }
+}
+
+@media (min-width: 68rem) {
+    .banner-home {
+        background-image: url("/img/banner.jpg");
+        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column;
+
+        & .empty-fill {
+            display: none;
+        }
+
+        & .banner-title {
+            display: none;
+        }
+
+        & .banner-title-long {
+            font-size: 18px;
+            color: var(--bright);
+            display: inline-block;
+            align-self: flex-end;
+            transform: translateX(-3rem) translateY(50%);
+        }
+
+        & .banner-home__content {
+            height: 649px;
+            width: 960px;
+            position: relative;
+            align-self: center;
+            justify-content: space-between;
+            top: 50%;
+            transform: translateY(-50%);
+
+            & .banner__rect {
+                display: block;
+                position: absolute;
+            }
+
+            & .socials {
+                align-self: flex-start;
+                transform: translateX(3rem) translateY(-50%);
+            }
+        }
+    }
+
+    .nav-flex {
+        max-width: 60rem;
+        align-self: center;
+        display: flex;
+        gap: 12rem;
+
+        & .navigation__list {
+            text-align: left;
+        }
+
+        & .nav-content__img {
+            display: inline-block;
+            transform: translateY(-3rem);
+        }
+    }
+
+    .socials {
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 85rem) {
+    .banner-home {
+        background-image: url("/img/banner-big.jpg");
+    }
+}

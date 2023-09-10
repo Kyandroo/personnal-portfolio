@@ -1,0 +1,74 @@
+---
+title: KDV | Cases
+tags: nav
+nav:
+    title: Cases
+    order: 2
+---
+
+{% extends "../_layouts/grid.njk" %}
+
+{% block top %}
+    <section class="side-nav read read--bold">
+        {% for category in categories %}
+            <a class="btn side-nav__links" href="#{{ category.name }}">
+                {{ category.name }}
+            </a>
+        {% endfor %}
+    </section>
+{% endblock top %}
+
+{% block categories %}
+    <h1 class="sr-only">
+        Cases
+    </h1>
+
+    {% for category in categories %}
+        <div id="{{ category.name }}" class="cat-banner">
+            <img class="banner-img" src="{{ category.img }}" alt="Banner for {{ category.name }} cases">
+
+            <section class="block cat-banner__content">
+                <svg xmlns="http://www.w3.org/2000/svg" width="377" height="2" fill="none"><path fill="url(#a)" fill-rule="evenodd" d="M377 0H0v2h377V0Z" clip-rule="evenodd"/><defs><linearGradient id="a" x1="0" x2="960" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#ED7C8D"/><stop offset=".484" stop-color="#9831FF"/><stop offset="1" stop-color="#ED8E7C"/></linearGradient></defs></svg>
+
+                <h2 class="read read--big">
+                    {{ category.name }} cases
+                </h2>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="378" height="2" fill="none"><path fill="url(#a)" fill-rule="evenodd" d="M0 2h378V0H0v2Z" clip-rule="evenodd"/><defs><linearGradient id="a" x1="-582" x2="378" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#ED7C8D"/><stop offset=".484" stop-color="#9831FF"/><stop offset="1" stop-color="#ED8E7C"/></linearGradient></defs></svg>
+            </section>
+        </div>
+
+        <section class="container big-block block--categories">
+            <p class="cat-intro">
+                {{ category.intro }}
+            </p>
+
+            <div class="cat-content__cases">
+                {% for item in collections.cases %}
+                    {% if item.data.kind == category.name %}
+                        <div class="case-card">
+                            <div class="fade"></div>
+
+                            <img class="banner-img" src="{{ item.data.img }}" alt="Mockup for the case '{{ item.data.title }}'">
+
+                            <div class="block case-card__content">
+                                <h3 class="read read--bold">
+                                    {{ item.data.title }}
+                                </h3>
+    
+                                <a class="btn btn--neg" href="{{ item.page.url }}">
+                                    Go to case
+                                </a>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+        
+    {% endfor %}
+{% endblock categories %}
+
+{% block bottom %}
+    <div class="grad-block empty-block"></div>
+{% endblock bottom %}

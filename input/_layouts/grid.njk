@@ -1,0 +1,15 @@
+{% extends "./base.njk" %}
+
+{% block main %}
+    {% block top %}
+        {{ content | safe }}
+    {% endblock top %}
+
+    {% block categories %}
+        {{ content | safe }}
+    {% endblock categories %}
+
+    {% block bottom %}
+        {{ content | safe }}
+    {% endblock bottom %}
+{% endblock main %}

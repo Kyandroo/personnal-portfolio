@@ -1,0 +1,32 @@
+{
+  "name": "devolder-kyandro-portfolio",
+  "version": "1.0.0",
+  "description": "Personnal Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @11ty/eleventy",
+    "watch": "npx @11ty/eleventy --serve",
+    "css": "npx postcss input/assets/styles/*.css --dir input/assets/styles/dist --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Kyandroo/personnal-portfolio.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS",
+    "Eleventy",
+    "Nunjucks"
+  ],
+  "author": "De Volder Kyandro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kyandroo/personnal-portfolio/issues"
+  },
+  "homepage": "https://github.com/Kyandroo/personnal-portfolio#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

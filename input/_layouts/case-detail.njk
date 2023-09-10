@@ -1,0 +1,14 @@
+{% import "../_components/_banner.njk" as macro %}
+{% extends "./base.njk" %}
+
+{% block main %}
+    {% block banner %}
+        {{ macro.heroDetail(img, title) }}
+    {% endblock banner %}
+
+    {% block content %}
+        <section class="case-detail">
+            {{ content | safe }}
+        </section>
+    {% endblock content %}
+{% endblock main %}
