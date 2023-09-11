@@ -19,7 +19,7 @@
                 <ul class="navigation__list">
                     {% for nav_item in collections.nav | sortByOrder %}
                     <li class="title">
-                        <a href="{{ nav_item.page.url }}">
+                        <a href="{{ '/nav_item.page.url' | url }}">
                             {{ nav_item.data.nav.title }}
                         </a>
                     </li>
