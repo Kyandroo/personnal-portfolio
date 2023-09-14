@@ -23,7 +23,6 @@ module.exports = (eleventyConfig) => {
       includes: "../_partials",
       layouts: "../_layouts",
       data: "../_data",
-      pathPrefix: "/output/",
     },
   };
 };
