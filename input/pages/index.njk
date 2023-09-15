@@ -12,7 +12,7 @@ nav:
 {% block banner %}
     <div class="banner-home block">
         <div class="banner-home__content">
-            <img class="banner__rect" src="{{ '/img/banner-square.png' | url }}" alt="Rectangle with gradiënt on it">
+            <img class="banner__rect" src="/img/banner-square.png" alt="Rectangle with gradiënt on it">
 
             <div class="empty-fill"></div>
 
@@ -38,7 +38,7 @@ nav:
         <div class="swipe-parent">
             <span class="swipe-left title invisible">Design Coding Photo</span>
 
-            <img src="{{ '/img/self-portrait.jpg' | url }}" alt="A self portrait of Kyandro">
+            <img src="/img/self-portrait.jpg" alt="A self portrait of Kyandro">
         </div>
 
         <p class="intro__text">
@@ -83,7 +83,7 @@ nav:
         </div>
 
         <div id="design-cat" class="container big-block categories__category">
-            <img class="cat-square" src="{{ '/img/square-grad.png' | url }}" alt="Square with a gradiënt border">
+            <img class="cat-square" src="/img/square-grad.png" alt="Square with a gradiënt border">
 
             <h2 class="title">
                 Spotlighted <span class="title title--highlight inl-span">design</span> cases
@@ -104,14 +104,14 @@ nav:
     
                             <div class="fade"></div>
     
-                            <img src="{{ 'item.data.img' | url }}" alt="Image of {{ item.data.title }}">
+                            <img src="{{ item.data.img }}" alt="Image of {{ item.data.title }}">
                         </a>
                     {% endif %}
                 {% endfor %}
             </div>
 
             <div class="cases-link">
-                <a href="{{ '/cases' | url }}">
+                <a href="/cases">
                     <span>
                         View all cases
                     </span>
@@ -126,7 +126,7 @@ nav:
 
         <div id="code-cat" class="big-block categories__category">
             <div class="container">
-                <img class="cat-square" src="{{ '/img/square-grad.png' | url }}" alt="Square with a gradiënt border">
+                <img class="cat-square" src="/img/square-grad.png" alt="Square with a gradiënt border">
 
                 <h2 class="title">
                     Spotlighted <span class="title title--highlight inl-span">coding</span> cases
@@ -146,14 +146,14 @@ nav:
         
                                 <div class="fade"></div>
         
-                                <img src="{{ 'item.data.img' | url }}" alt="Image of {{ item.data.title }}">
+                                <img src="{{ item.data.img }}" alt="Image of {{ item.data.title }}">
                             </a>
                         {% endif %}
                     {% endfor %}
                 </div>
 
                 <div class="cases-link">
-                    <a href="{{ '/cases' | url }}">
+                    <a href="/cases">
                         <span>
                             View all cases
                         </span>
@@ -168,7 +168,7 @@ nav:
         </div>
 
         <div id="photo-cat" class="container big-block categories__category">
-            <img class="cat-square" src="{{ '/img/square-grad.png' | url }}" alt="Square with a gradiënt border">
+            <img class="cat-square" src="/img/square-grad.png" alt="Square with a gradiënt border">
 
             <h2 class="title">
                 Spotlighted <span class="title title--highlight inl-span">photo</span> cases
@@ -181,21 +181,21 @@ nav:
             <div class="thumbnails">
                 {% for item in collections.cases %}
                     {% if item.data.kind == "photo" and item.data.spotlight == true %}
-                        <a class="thumbnails__case" href="{{ 'item.page.url' | url }}">
+                        <a class="thumbnails__case" href="item.page.url">
                             <p class="read read--bold thumbnails__title">
                                 {{ item.data.title }}
                             </p>
     
                             <div class="fade"></div>
     
-                            <img src="{{ 'item.data.img' | url }}" alt="Image of {{ item.data.title }}">
+                            <img src="{{ item.data.img }}" alt="Image of {{ item.data.title }}">
                         </a>
                     {% endif %}
                 {% endfor %}
             </div>
 
             <div class="cases-link">
-                <a href="{{ '/cases' | url }}">
+                <a href="/cases">
                     <span>
                         View all cases
                     </span>
