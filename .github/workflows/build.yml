@@ -24,14 +24,14 @@ jobs:
       - name: Install dependencies & build
         run: |
           npm ci
-          npm run start          
+          npm run start
+          
+      - name: Print npm debug log
+        run: cat /home/runner/.npm/_logs/2023-09-15T12_52_14_530Z-debug.log
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./output
           github_token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Print npm debug log
-        run: cat /home/runner/.npm/_logs/2023-09-15T12_52_14_530Z-debug.log
         
