@@ -5,4 +5,5 @@ kind: coding
 spotlight: false
 layout: case-detail
 tags: cases
+url: https://kyandroo.github.io/she-code/
 ---

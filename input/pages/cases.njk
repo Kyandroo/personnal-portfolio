@@ -56,9 +56,15 @@ nav:
                                     {{ item.data.title }}
                                 </h3>
     
-                                <a class="btn btn--neg" href="{{ item.page.url }}">
-                                    Go to case
-                                </a>
+                                {% if item.data.url %}
+                                    <a class="btn btn--neg" href="{{ item.data.url }}" target="_blank">
+                                        Go to case
+                                    </a>
+                                {% else %}
+                                    <a class="btn btn--neg" href="{{ item.page.url }}">
+                                        Go to case
+                                    </a>
+                                {% endif %}        
                             </div>
                         </div>
                     {% endif %}
