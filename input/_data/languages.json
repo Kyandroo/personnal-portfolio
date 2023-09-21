@@ -1,0 +1,32 @@
+[
+    {
+        "alt": "Logo of html",
+        "class": "language-html",
+        "img": "/img/languages/html.png"
+    },
+    {
+        "alt": "Logo of css",
+        "class": "language-css",
+        "img": "/img/languages/css.png"
+    },
+    {
+        "alt": "Logo of node.js",
+        "class": "language-node",
+        "img": "/img/languages/node.png"
+    },
+    {
+        "alt": "Logo of javascript",
+        "class": "language-js",
+        "img": "/img/languages/js.png"
+    },
+    {
+        "alt": "Logo of gsap",
+        "class": "language-gsap",
+        "img": "/img/languages/gsap.png"
+    },
+    {
+        "alt": "Logo of nunjucks templating",
+        "class": "language-njk",
+        "img": "/img/languages/njk.png"
+    }
+]

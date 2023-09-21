@@ -1,5 +1,32 @@
 .block {
     padding: var(--spacing-base);
+
+    &.block--languages {
+        margin-top: var(--margin-m);
+
+        & .languages {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--margin-m);
+        }
+
+        & img {
+            width: 7rem;
+            filter: opacity(.6)
+        }
+
+        & li {
+        max-width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+        & .language-njk {
+            transform: scale(.7);
+        }
+    }
 }
 
 .big-block {

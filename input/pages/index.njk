@@ -10,6 +10,12 @@ nav:
 {% import "../_components/_socials.njk" as fileSocials %}
 
 {% block banner %}
+    <div class="welcome-load">
+        <div class="welcome__circle">
+            <div class="circle__inner"></div>
+        </div>
+    </div>
+
     <div class="banner-home block">
         <div class="banner-home__content">
             <img class="banner__rect" src="/img/banner-square.png" alt="Rectangle with gradiënt on it">
@@ -30,6 +36,16 @@ nav:
 {% endblock banner %}
 
 {% block content %}
+    <div class="container block block--languages">
+        <ul class="languages">
+            {% for language in languages %}
+                <li class="{{ language.class }}">
+                    <img src="{{ language.img }}" alt="{{ language.alt }}">
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
     <div class="big-block intro">
         <h1 class="sr-only">
             Kyandro De Volder, Graphic designer and front-end designer

@@ -28,5 +28,8 @@
   "homepage": "https://github.com/Kyandroo/personnal-portfolio#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "gsap": "^3.12.2"
   }
 }
